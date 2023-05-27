@@ -13,7 +13,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { Icons } from "@/components/icons"
+import { Icons } from "@/components/templates/icons"
 
 const components: { title: string; href: string; description: string }[] = [
   {

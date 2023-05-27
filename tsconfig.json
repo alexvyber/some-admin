@@ -24,7 +24,14 @@
       "contentlayer/generated": ["./.contentlayer/generated"]
     },
     "baseUrl": ".",
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "composite": false,
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
   },
   "include": [
     "next-env.d.ts",
