@@ -1,5 +1,6 @@
 module.exports = {
   $schema: "https://json.schemastore.org/eslintrc",
+  "root": true,
   ignorePatterns: ["**/__generated__/*"],
   root: true,
   extends: [
@@ -7,19 +8,19 @@ module.exports = {
     // "turbo",
     "prettier",
     "plugin:tailwindcss/recommended",
-    "@alexvyber/eslint-config/react",
+    // "@alexvyber/eslint-config/react",
   ],
   plugins: ["tailwindcss"],
   rules: {
     "@next/next/no-html-link-for-pages": "off",
-    // "react/jsx-key": "off",
+    "react/jsx-key": "off",
     "tailwindcss/no-custom-classname": "off",
     "tailwindcss/classnames-order": "off",
   },
   settings: {
     tailwindcss: {
       callees: ["cn", "cx"],
-      config: "tailwind.config.cjs",
+      config: "tailwind.config.ts",
     },
   },
   overrides: [
