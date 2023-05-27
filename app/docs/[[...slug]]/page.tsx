@@ -91,11 +91,11 @@ export default async function DocPage({ params }: DocPageProps) {
   return (
     <main className="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_300px]">
       <div className="mx-auto w-full min-w-0">
-        <div className="mb-4 flex items-center space-x-1 text-sm text-muted-foreground">
-          <div className="overflow-hidden text-ellipsis whitespace-nowrap">
+        <div className="flex items-center mb-4 space-x-1 text-sm text-muted-foreground">
+          <div className="overflow-hidden whitespace-nowrap text-ellipsis">
             Docs
           </div>
-          <ChevronRight className="h-4 w-4" />
+          <ChevronRight className="w-4 h-4" />
           <div className="font-medium text-foreground">{doc.title}</div>
         </div>
         <div className="space-y-2">
@@ -109,7 +109,7 @@ export default async function DocPage({ params }: DocPageProps) {
           )}
         </div>
         {doc.radix ? (
-          <div className="flex items-center space-x-2 pt-4">
+          <div className="flex items-center pt-4 space-x-2">
             {doc.radix?.link && (
               <Link
                 href={doc.radix.link}
@@ -117,7 +117,7 @@ export default async function DocPage({ params }: DocPageProps) {
                 rel="noreferrer"
                 className={cn(badgeVariants({ variant: "secondary" }))}
               >
-                <Icons.radix className="mr-1 h-3 w-3" />
+                <Icons.radix className="mr-1 w-3 h-3" />
                 Radix UI
               </Link>
             )}

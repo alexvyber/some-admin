@@ -42,12 +42,12 @@ export function PresetActions() {
         <DropdownMenuTrigger asChild>
           <Button variant="secondary">
             <span className="sr-only">Actions</span>
-            <MoreHorizontal className="h-4 w-4" />
+            <MoreHorizontal className="w-4 h-4" />
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
           <DropdownMenuItem onSelect={() => setIsOpen(true)}>
-            <Flag className="mr-2 h-4 w-4" />
+            <Flag className="mr-2 w-4 h-4" />
             Content filter preferences
           </DropdownMenuItem>
           <DropdownMenuSeparator />
@@ -55,7 +55,7 @@ export function PresetActions() {
             onSelect={() => setShowDeleteDialog(true)}
             className="text-red-600"
           >
-            <Trash className="mr-2 h-4 w-4" />
+            <Trash className="mr-2 w-4 h-4" />
             Delete preset
           </DropdownMenuItem>
         </DropdownMenuContent>
@@ -74,7 +74,7 @@ export function PresetActions() {
             <h4 className="text-sm text-muted-foreground">
               Playground Warnings
             </h4>
-            <div className="flex items-start justify-between space-x-4 pt-3">
+            <div className="flex justify-between items-start pt-3 space-x-4">
               <Switch name="show" id="show" defaultChecked={true} />
               <Label className="grid gap-1 font-normal" htmlFor="show">
                 <span className="font-semibold">

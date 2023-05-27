@@ -11,6 +11,8 @@ import { SiteHeader } from "@/components/templates/site-header"
 import { StyleSwitcher } from "@/components/templates/style-switcher"
 import { TailwindIndicator } from "@/components/templates/tailwind-indicator"
 import { ThemeProvider } from "@/components/templates/theme-provider"
+import { Footer } from "@/components/partials/footer"
+import{ MobileFooter} from "@/components/partials/footer/mobile-footer"
 
 export const metadata: Metadata = {
   title: {
@@ -83,16 +85,22 @@ export default function RootLayout({ children }: RootLayoutProps) {
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <div className="relative flex min-h-screen flex-col">
+            <div className="flex relative flex-col min-h-screen">
               <SiteHeader />
               <div className="flex-1">{children}</div>
-              <SiteFooter />
+              {/* <SiteFooter /> */}
+
+              <Footer />    
+              {/* <MobileFooter /> */}
             </div>
-            <TailwindIndicator />
+            {/* <TailwindIndicator /> */}
           </ThemeProvider>
-          <StyleSwitcher />
-          <Analytics />
+          {/* <StyleSwitcher /> */}
+          {/* <Analytics /> */}
+
+          
           <Toaster />
+          
         </body>
       </html>
     </>

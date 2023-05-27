@@ -2,17 +2,10 @@ import Balance from "react-wrap-balancer"
 
 import { cn } from "@/lib/utils"
 
-function PageHeader({
-  className,
-  children,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) {
+function PageHeader({ className, children, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <section
-      className={cn(
-        "flex max-w-[980px] flex-col items-start gap-2 px-4 pt-8 md:pt-12",
-        className
-      )}
+      className={cn("flex max-w-[980px] flex-col items-start gap-2 px-4 pt-8 md:pt-12", className)}
       {...props}
     >
       {children}
@@ -20,10 +13,7 @@ function PageHeader({
   )
 }
 
-function PageHeaderHeading({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLHeadingElement>) {
+function PageHeaderHeading({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
   return (
     <h1
       className={cn(
@@ -41,10 +31,7 @@ function PageHeaderDescription({
 }: React.HTMLAttributes<HTMLParagraphElement>) {
   return (
     <Balance
-      className={cn(
-        "max-w-[750px] text-lg text-muted-foreground sm:text-xl",
-        className
-      )}
+      className={cn("max-w-[750px] text-lg text-muted-foreground sm:text-xl", className)}
       {...props}
     />
   )

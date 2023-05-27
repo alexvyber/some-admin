@@ -47,9 +47,9 @@ export default function MusicPage() {
             <div className="grid lg:grid-cols-5">
               <Sidebar playlists={playlists} className="hidden lg:block" />
               <div className="col-span-3 lg:col-span-4 lg:border-l">
-                <div className="h-full px-4 py-6 lg:px-8">
-                  <Tabs defaultValue="music" className="h-full space-y-6">
-                    <div className="space-between flex items-center">
+                <div className="py-6 px-4 h-full lg:px-8">
+                  <Tabs defaultValue="music" className="space-y-6 h-full">
+                    <div className="flex items-center space-between">
                       <TabsList>
                         <TabsTrigger value="music" className="relative">
                           Music
@@ -59,18 +59,18 @@ export default function MusicPage() {
                           Live
                         </TabsTrigger>
                       </TabsList>
-                      <div className="ml-auto mr-4">
+                      <div className="mr-4 ml-auto">
                         <Button>
-                          <PlusCircle className="mr-2 h-4 w-4" />
+                          <PlusCircle className="mr-2 w-4 h-4" />
                           Add music
                         </Button>
                       </div>
                     </div>
                     <TabsContent
                       value="music"
-                      className="border-none p-0 outline-none"
+                      className="p-0 border-none outline-none"
                     >
-                      <div className="flex items-center justify-between">
+                      <div className="flex justify-between items-center">
                         <div className="space-y-1">
                           <h2 className="text-2xl font-semibold tracking-tight">
                             Listen Now
@@ -83,7 +83,7 @@ export default function MusicPage() {
                       <Separator className="my-4" />
                       <div className="relative">
                         <ScrollArea>
-                          <div className="flex space-x-4 pb-4">
+                          <div className="flex pb-4 space-x-4">
                             {listenNowAlbums.map((album) => (
                               <AlbumArtwork
                                 key={album.name}
@@ -109,7 +109,7 @@ export default function MusicPage() {
                       <Separator className="my-4" />
                       <div className="relative">
                         <ScrollArea>
-                          <div className="flex space-x-4 pb-4">
+                          <div className="flex pb-4 space-x-4">
                             {madeForYouAlbums.map((album) => (
                               <AlbumArtwork
                                 key={album.name}
@@ -129,7 +129,7 @@ export default function MusicPage() {
                       value="podcasts"
                       className="h-full flex-col border-none p-0 data-[state=active]:flex"
                     >
-                      <div className="flex items-center justify-between">
+                      <div className="flex justify-between items-center">
                         <div className="space-y-1">
                           <h2 className="text-2xl font-semibold tracking-tight">
                             New Episodes

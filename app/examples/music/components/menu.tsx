@@ -19,7 +19,7 @@ import {
 
 export function Menu() {
   return (
-    <Menubar className="rounded-none border-b border-none px-2 lg:px-4">
+    <Menubar className="px-2 rounded-none border-b border-none lg:px-4">
       <MenubarMenu>
         <MenubarTrigger className="font-bold">Music</MenubarTrigger>
         <MenubarContent>
@@ -130,13 +130,13 @@ export function Menu() {
           <MenubarItem>
             Smart Dictation...{" "}
             <MenubarShortcut>
-              <Mic className="h-4 w-4" />
+              <Mic className="w-4 h-4" />
             </MenubarShortcut>
           </MenubarItem>
           <MenubarItem>
             Emoji & Symbols{" "}
             <MenubarShortcut>
-              <Globe className="h-4 w-4" />
+              <Globe className="w-4 h-4" />
             </MenubarShortcut>
           </MenubarItem>
         </MenubarContent>

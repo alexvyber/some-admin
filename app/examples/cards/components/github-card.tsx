@@ -22,7 +22,7 @@ import { Separator } from "@/components/ui/separator"
 export function DemoGithub() {
   return (
     <Card>
-      <CardHeader className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0">
+      <CardHeader className="grid gap-4 items-start space-y-0 grid-cols-[1fr_110px]">
         <div className="space-y-1">
           <CardTitle>shadcn/ui</CardTitle>
           <CardDescription>
@@ -32,14 +32,14 @@ export function DemoGithub() {
         </div>
         <div className="flex items-center space-x-1 rounded-md bg-secondary text-secondary-foreground">
           <Button variant="secondary" className="px-3">
-            <Star className="mr-2 h-4 w-4" />
+            <Star className="mr-2 w-4 h-4" />
             Star
           </Button>
           <Separator orientation="vertical" className="h-[20px]" />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="secondary" className="px-2">
-                <ChevronDown className="h-4 w-4 text-secondary-foreground" />
+                <ChevronDown className="w-4 h-4 text-secondary-foreground" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent
@@ -57,7 +57,7 @@ export function DemoGithub() {
               <DropdownMenuCheckboxItem>Inspiration</DropdownMenuCheckboxItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem>
-                <Plus className="mr-2 h-4 w-4" /> Create List
+                <Plus className="mr-2 w-4 h-4" /> Create List
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -66,11 +66,11 @@ export function DemoGithub() {
       <CardContent>
         <div className="flex space-x-4 text-sm text-muted-foreground">
           <div className="flex items-center">
-            <Circle className="mr-1 h-3 w-3 fill-sky-400 text-sky-400" />
+            <Circle className="mr-1 w-3 h-3 fill-sky-400 text-sky-400" />
             TypeScipt
           </div>
           <div className="flex items-center">
-            <Star className="mr-1 h-3 w-3" />
+            <Star className="mr-1 w-3 h-3" />
             10k
           </div>
           <div>Updated April 2023</div>

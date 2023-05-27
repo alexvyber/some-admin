@@ -19,22 +19,22 @@ import DashboardPage from "@/app/examples/dashboard/page"
 export default function IndexPage() {
   return (
     <div className="container relative pb-10">
-      <StyleSwitcher />
+      {/* <StyleSwitcher />
       <PageHeader>
         <Link
           href="/docs/forms/react-hook-form"
-          className="inline-flex items-center rounded-lg bg-muted px-3 py-1 text-sm font-medium"
+          className="inline-flex items-center py-1 px-3 text-sm font-medium rounded-lg bg-muted"
         >
           🎉 <Separator className="mx-2 h-4" orientation="vertical" /> Building
           forms with React Hook Form and Zod
-          <ChevronRight className="ml-1 h-4 w-4" />
+          <ChevronRight className="ml-1 w-4 h-4" />
         </Link>
         <PageHeaderHeading>Build your component library.</PageHeaderHeading>
         <PageHeaderDescription>
           Beautifully designed components that you can copy and paste into your
           apps. Accessible. Customizable. Open Source.
         </PageHeaderDescription>
-        <div className="flex w-full items-center space-x-4 pb-8 pt-4 md:pb-10">
+        <div className="flex items-center pt-4 pb-8 space-x-4 w-full md:pb-10">
           <Link href="/docs" className={cn(buttonVariants())}>
             Get Started
           </Link>
@@ -44,13 +44,13 @@ export default function IndexPage() {
             href={siteConfig.links.github}
             className={cn(buttonVariants({ variant: "outline" }))}
           >
-            <Icons.gitHub className="mr-2 h-4 w-4" />
+            <Icons.gitHub className="mr-2 w-4 h-4" />
             GitHub
           </Link>
         </div>
       </PageHeader>
       <ExamplesNav className="[&>a:first-child]:text-primary" />
-      <section className="space-y-8 overflow-hidden rounded-lg border-2 border-primary dark:border-muted md:hidden">
+      <section className="overflow-hidden space-y-8 rounded-lg border-2 md:hidden border-primary dark:border-muted">
         <Image
           src="/examples/dashboard-light.png"
           width={1280}
@@ -67,10 +67,10 @@ export default function IndexPage() {
         />
       </section>
       <section className="hidden md:block">
-        <div className="overflow-hidden rounded-lg border bg-background shadow-xl">
+        <div className="overflow-hidden rounded-lg border shadow-xl bg-background">
           <DashboardPage />
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

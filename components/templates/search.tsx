@@ -19,11 +19,7 @@ export function DocsSearch({ className, ...props }: DocsSearchProps) {
   }
 
   return (
-    <form
-      onSubmit={onSubmit}
-      className={cn("relative w-full", className)}
-      {...props}
-    >
+    <form onSubmit={onSubmit} className={cn("relative w-full", className)} {...props}>
       <Input
         type="search"
         placeholder="Search documentation..."

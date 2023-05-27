@@ -23,7 +23,7 @@ export function CodeViewer() {
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4">
-          <div className="rounded-md bg-black p-6">
+          <div className="p-6 bg-black rounded-md">
             <pre>
               <code className="grid gap-1 text-sm text-muted-foreground [&_span]:h-4">
                 <span>

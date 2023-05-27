@@ -51,10 +51,10 @@ export default function PlaygroundPage() {
           className="hidden dark:block"
         />
       </div>
-      <div className="hidden h-full flex-col md:flex">
-        <div className="container flex flex-col items-start justify-between space-y-2 py-4 sm:flex-row sm:items-center sm:space-y-0 md:h-16">
+      <div className="hidden flex-col h-full md:flex">
+        <div className="container flex flex-col justify-between items-start py-4 space-y-2 sm:flex-row sm:items-center sm:space-y-0 md:h-16">
           <h2 className="text-lg font-semibold">Playground</h2>
-          <div className="ml-auto flex w-full space-x-2 sm:justify-end">
+          <div className="flex ml-auto space-x-2 w-full sm:justify-end">
             <PresetSelector presets={presets} />
             <PresetSave />
             <div className="hidden space-x-2 md:flex">
@@ -66,8 +66,8 @@ export default function PlaygroundPage() {
         </div>
         <Separator />
         <Tabs defaultValue="complete" className="flex-1">
-          <div className="container h-full py-6">
-            <div className="grid h-full items-stretch gap-6 md:grid-cols-[1fr_200px]">
+          <div className="container py-6 h-full">
+            <div className="grid gap-6 items-stretch h-full md:grid-cols-[1fr_200px]">
               <div className="hidden flex-col space-y-4 sm:flex md:order-2">
                 <div className="grid gap-2">
                   <HoverCard openDelay={200}>
@@ -76,7 +76,7 @@ export default function PlaygroundPage() {
                         Mode
                       </span>
                     </HoverCardTrigger>
-                    <HoverCardContent className="w-[320px] text-sm" side="left">
+                    <HoverCardContent className="text-sm w-[320px]" side="left">
                       Choose the interface that best suits your task. You can
                       provide: a simple prompt to complete, starting and ending
                       text to insert a completion within, or some text with
@@ -86,15 +86,15 @@ export default function PlaygroundPage() {
                   <TabsList className="grid grid-cols-3">
                     <TabsTrigger value="complete">
                       <span className="sr-only">Complete</span>
-                      <Icons.completeMode className="h-5 w-5" />
+                      <Icons.completeMode className="w-5 h-5" />
                     </TabsTrigger>
                     <TabsTrigger value="insert">
                       <span className="sr-only">Insert</span>
-                      <Icons.insertMode className="h-5 w-5" />
+                      <Icons.insertMode className="w-5 h-5" />
                     </TabsTrigger>
                     <TabsTrigger value="edit">
                       <span className="sr-only">Edit</span>
-                      <Icons.editMode className="h-5 w-5" />
+                      <Icons.editMode className="w-5 h-5" />
                     </TabsTrigger>
                   </TabsList>
                 </div>
@@ -104,24 +104,24 @@ export default function PlaygroundPage() {
                 <TopPSelector defaultValue={[0.9]} />
               </div>
               <div className="md:order-1">
-                <TabsContent value="complete" className="mt-0 border-0 p-0">
-                  <div className="flex h-full flex-col space-y-4">
+                <TabsContent value="complete" className="p-0 mt-0 border-0">
+                  <div className="flex flex-col space-y-4 h-full">
                     <Textarea
                       placeholder="Write a tagline for an ice cream shop"
-                      className="min-h-[400px] flex-1 p-4 md:min-h-[700px] lg:min-h-[700px]"
+                      className="flex-1 p-4 min-h-[400px] md:min-h-[700px] lg:min-h-[700px]"
                     />
                     <div className="flex items-center space-x-2">
                       <Button>Submit</Button>
                       <Button variant="secondary">
                         <span className="sr-only">Show history</span>
-                        <History className="h-4 w-4" />
+                        <History className="w-4 h-4" />
                       </Button>
                     </div>
                   </div>
                 </TabsContent>
-                <TabsContent value="insert" className="mt-0 border-0 p-0">
+                <TabsContent value="insert" className="p-0 mt-0 border-0">
                   <div className="flex flex-col space-y-4">
-                    <div className="grid h-full grid-rows-2 gap-6 lg:grid-cols-2 lg:grid-rows-1">
+                    <div className="grid grid-rows-2 gap-6 h-full lg:grid-cols-2 lg:grid-rows-1">
                       <Textarea
                         placeholder="We're writing to [inset]. Congrats from OpenAI!"
                         className="h-full min-h-[300px] lg:min-h-[700px] xl:min-h-[700px]"
@@ -132,16 +132,16 @@ export default function PlaygroundPage() {
                       <Button>Submit</Button>
                       <Button variant="secondary">
                         <span className="sr-only">Show history</span>
-                        <History className="h-4 w-4" />
+                        <History className="w-4 h-4" />
                       </Button>
                     </div>
                   </div>
                 </TabsContent>
-                <TabsContent value="edit" className="mt-0 border-0 p-0">
+                <TabsContent value="edit" className="p-0 mt-0 border-0">
                   <div className="flex flex-col space-y-4">
-                    <div className="grid h-full gap-6 lg:grid-cols-2">
+                    <div className="grid gap-6 h-full lg:grid-cols-2">
                       <div className="flex flex-col space-y-4">
-                        <div className="flex flex-1 flex-col space-y-2">
+                        <div className="flex flex-col flex-1 space-y-2">
                           <Label htmlFor="input">Input</Label>
                           <Textarea
                             id="input"
@@ -157,13 +157,13 @@ export default function PlaygroundPage() {
                           />
                         </div>
                       </div>
-                      <div className="mt-[21px] min-h-[400px] rounded-md border bg-muted lg:min-h-[700px]" />
+                      <div className="rounded-md border mt-[21px] min-h-[400px] bg-muted lg:min-h-[700px]" />
                     </div>
                     <div className="flex items-center space-x-2">
                       <Button>Submit</Button>
                       <Button variant="secondary">
                         <span className="sr-only">Show history</span>
-                        <History className="h-4 w-4" />
+                        <History className="w-4 h-4" />
                       </Button>
                     </div>
                   </div>

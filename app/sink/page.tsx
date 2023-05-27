@@ -51,7 +51,7 @@ export default function KitchenSinkPage() {
   return (
     <div className="container">
       <div className="grid gap-4 py-10">
-        <div className="grid grid-cols-3 items-start gap-4">
+        <div className="grid grid-cols-3 gap-4 items-start">
           <div className="grid gap-4">
             <ComponentWrapper>
               <CardDemo className="w-full" />
@@ -60,19 +60,18 @@ export default function KitchenSinkPage() {
               <SliderDemo className="w-full" />
             </ComponentWrapper>
             <ComponentWrapper
-              className="spa flex-col items-start space-x-0
-				space-y-2"
+              className="flex-col items-start space-y-2 space-x-0 spa"
             >
-              <p className="text-foreground-muted text-sm">Documentation</p>
+              <p className="text-sm text-foreground-muted">Documentation</p>
               <p className="text-sm font-medium leading-none">
                 You can customize the theme using{" "}
-                <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold text-foreground">
+                <code className="relative font-mono text-sm font-semibold rounded bg-muted px-[0.3rem] py-[0.2rem] text-foreground">
                   CSS variables
                 </code>
                 .{" "}
                 <Link
                   href="#"
-                  className="font-medium text-primary underline underline-offset-4"
+                  className="font-medium underline text-primary underline-offset-4"
                 >
                   Click here
                 </Link>{" "}
@@ -92,7 +91,7 @@ export default function KitchenSinkPage() {
               <MenubarDemo />
               <AvatarDemo />
             </ComponentWrapper>
-            <ComponentWrapper className="flex-col items-start space-x-0 space-y-2">
+            <ComponentWrapper className="flex-col items-start space-y-2 space-x-0">
               <div className="flex space-x-2">
                 <ButtonDemo />
                 <ButtonSecondary />

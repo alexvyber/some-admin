@@ -31,10 +31,7 @@ export function SheetPosition() {
       >
         <div className="grid grid-cols-2 gap-2">
           {SHEET_POSITIONS.map((position, index) => (
-            <div
-              key={`${position}-${index}`}
-              className="flex items-center space-x-2"
-            >
+            <div key={`${position}-${index}`} className="flex items-center space-x-2">
               <RadioGroupItem value={position} id={position} />
               <Label htmlFor={position}>{position}</Label>
             </div>

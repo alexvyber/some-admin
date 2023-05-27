@@ -47,7 +47,7 @@ export function ModelSelector({ models, types, ...props }: ModelSelectorProps) {
         </HoverCardTrigger>
         <HoverCardContent
           align="start"
-          className="w-[260px] text-sm"
+          className="text-sm w-[260px]"
           side="left"
         >
           The model which will generate the completion. Some models are suitable
@@ -61,13 +61,13 @@ export function ModelSelector({ models, types, ...props }: ModelSelectorProps) {
             role="combobox"
             aria-expanded={open}
             aria-label="Select a model"
-            className="w-full justify-between"
+            className="justify-between w-full"
           >
             {selectedModel ? selectedModel.name : "Select a model..."}
-            <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+            <ChevronsUpDown className="ml-2 w-4 h-4 opacity-50 shrink-0" />
           </Button>
         </PopoverTrigger>
-        <PopoverContent align="end" className="w-[250px] p-0">
+        <PopoverContent align="end" className="p-0 w-[250px]">
           <HoverCard>
             <HoverCardContent
               side="left"
@@ -81,7 +81,7 @@ export function ModelSelector({ models, types, ...props }: ModelSelectorProps) {
                   {peekedModel.description}
                 </div>
                 {peekedModel.strengths ? (
-                  <div className="mt-4 grid gap-2">
+                  <div className="grid gap-2 mt-4">
                     <h5 className="text-sm font-medium leading-none">
                       Strengths
                     </h5>

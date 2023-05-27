@@ -11,6 +11,7 @@ import TextareaAutosize from "react-textarea-autosize"
 import * as z from "zod"
 
 import "@/styles/editor.css"
+
 import { cn } from "@/lib/utils"
 import { postPatchSchema } from "@/lib/validations/post"
 import { buttonVariants } from "@/components/ui/button"
@@ -125,10 +126,7 @@ export function Editor({ post }: EditorProps) {
       <div className="grid w-full gap-10">
         <div className="flex w-full items-center justify-between">
           <div className="flex items-center space-x-10">
-            <Link
-              href="/dashboard"
-              className={cn(buttonVariants({ variant: "ghost" }))}
-            >
+            <Link href="/dashboard" className={cn(buttonVariants({ variant: "ghost" }))}>
               <>
                 <Icons.chevronLeft className="mr-2 h-4 w-4" />
                 Back
@@ -139,13 +137,11 @@ export function Editor({ post }: EditorProps) {
             </p>
           </div>
           <button type="submit" className={cn(buttonVariants())}>
-            {isSaving && (
-              <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
-            )}
+            {isSaving && <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />}
             <span>Save</span>
           </button>
         </div>
-        <div className="prose prose-stone mx-auto w-[800px] dark:prose-invert">
+        <div className="prose prose-stone dark:prose-invert mx-auto w-[800px]">
           <TextareaAutosize
             autoFocus
             id="title"
@@ -156,11 +152,8 @@ export function Editor({ post }: EditorProps) {
           />
           <div id="editor" className="min-h-[500px]" />
           <p className="text-sm text-gray-500">
-            Use{" "}
-            <kbd className="rounded-md border bg-muted px-1 text-xs uppercase">
-              Tab
-            </kbd>{" "}
-            to open the command menu.
+            Use <kbd className="rounded-md border bg-muted px-1 text-xs uppercase">Tab</kbd> to open
+            the command menu.
           </p>
         </div>
       </div>

@@ -25,16 +25,10 @@ export function SheetSize() {
   const [size, setSize] = useState<SheetSize>("default")
   return (
     <div className="flex flex-col space-y-8">
-      <RadioGroup
-        defaultValue={size}
-        onValueChange={(value) => setSize(value as SheetSize)}
-      >
+      <RadioGroup defaultValue={size} onValueChange={(value) => setSize(value as SheetSize)}>
         <div className="grid grid-cols-2 gap-2">
           {SHEET_SIZES.map((size, index) => (
-            <div
-              key={`${size}-${index}`}
-              className="flex items-center space-x-2"
-            >
+            <div key={`${size}-${index}`} className="flex items-center space-x-2">
               <RadioGroupItem value={size} id={size} />
               <Label htmlFor={size}>{size}</Label>
             </div>

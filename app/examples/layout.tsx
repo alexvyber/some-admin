@@ -28,11 +28,11 @@ export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
         <PageHeader className="page-header">
           <Link
             href="/docs/forms/react-hook-form"
-            className="inline-flex items-center rounded-lg bg-muted px-3 py-1 text-sm font-medium"
+            className="inline-flex items-center py-1 px-3 text-sm font-medium rounded-lg bg-muted"
           >
             🎉 <Separator className="mx-2 h-4" orientation="vertical" />{" "}
             Building forms with React Hook Form and Zod
-            <ChevronRight className="ml-1 h-4 w-4" />
+            <ChevronRight className="ml-1 w-4 h-4" />
           </Link>
           <PageHeaderHeading className="hidden md:block">
             Check out some examples.
@@ -42,7 +42,7 @@ export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
             Dashboard, cards, authentication. Some examples built using the
             components. Use this as a guide to build your own.
           </PageHeaderDescription>
-          <section className="flex w-full items-center space-x-4 pb-8 pt-4 md:pb-10">
+          <section className="flex items-center pt-4 pb-8 space-x-4 w-full md:pb-10">
             <Link
               href="/docs"
               className={cn(buttonVariants(), "rounded-[6px]")}
@@ -62,7 +62,7 @@ export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
         </PageHeader>
         <section>
           <ExamplesNav />
-          <div className="overflow-hidden rounded-[0.5rem] border bg-background shadow-xl">
+          <div className="overflow-hidden border shadow-xl rounded-[0.5rem] bg-background">
             {children}
           </div>
         </section>

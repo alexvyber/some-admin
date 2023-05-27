@@ -1,6 +1,6 @@
 import { faker } from "@faker-js/faker"
 
-import { Payment, columns } from "@/components/examples/data-table/columns"
+import { columns, Payment } from "@/components/examples/data-table/columns"
 import { DataTable } from "@/components/examples/data-table/data-table"
 
 const data: Payment[] = [

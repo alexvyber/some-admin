@@ -15,17 +15,17 @@ import { Label } from "@/components/ui/label"
 
 export function PodcastEmptyPlaceholder() {
   return (
-    <div className="flex h-[450px] shrink-0 items-center justify-center rounded-md border border-dashed">
-      <div className="mx-auto flex max-w-[420px] flex-col items-center justify-center text-center">
-        <Podcast className="h-10 w-10 text-muted-foreground" />
+    <div className="flex justify-center items-center rounded-md border border-dashed h-[450px] shrink-0">
+      <div className="flex flex-col justify-center items-center mx-auto text-center max-w-[420px]">
+        <Podcast className="w-10 h-10 text-muted-foreground" />
         <h3 className="mt-4 text-lg font-semibold">No episodes added</h3>
-        <p className="mb-4 mt-2 text-sm text-muted-foreground">
+        <p className="mt-2 mb-4 text-sm text-muted-foreground">
           You have not added any podcasts. Add one below.
         </p>
         <Dialog>
           <DialogTrigger>
             <Button size="sm" className="relative">
-              <Plus className="mr-2 h-4 w-4" />
+              <Plus className="mr-2 w-4 h-4" />
               Add Podcast
             </Button>
           </DialogTrigger>

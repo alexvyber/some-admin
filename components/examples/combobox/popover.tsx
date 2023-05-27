@@ -1,14 +1,7 @@
 "use client"
 
 import * as React from "react"
-import {
-  ArrowUpCircle,
-  CheckCircle2,
-  Circle,
-  HelpCircle,
-  LucideIcon,
-  XCircle,
-} from "lucide-react"
+import { ArrowUpCircle, CheckCircle2, Circle, HelpCircle, LucideIcon, XCircle } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -20,11 +13,7 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command"
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover"
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 
 type Status = {
   value: string
@@ -62,20 +51,14 @@ const statuses: Status[] = [
 
 export function ComboboxPopover() {
   const [open, setOpen] = React.useState(false)
-  const [selectedStatus, setSelectedStatus] = React.useState<Status | null>(
-    null
-  )
+  const [selectedStatus, setSelectedStatus] = React.useState<Status | null>(null)
 
   return (
     <div className="flex items-center space-x-4">
       <p className="text-sm text-muted-foreground">Status</p>
       <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>
-          <Button
-            variant="outline"
-            size="sm"
-            className="w-[150px] justify-start"
-          >
+          <Button variant="outline" size="sm" className="w-[150px] justify-start">
             {selectedStatus ? (
               <>
                 <selectedStatus.icon className="mr-2 h-4 w-4 shrink-0" />
@@ -97,8 +80,7 @@ export function ComboboxPopover() {
                     key={status.value}
                     onSelect={(value) => {
                       setSelectedStatus(
-                        statuses.find((priority) => priority.value === value) ||
-                          null
+                        statuses.find((priority) => priority.value === value) || null
                       )
                       setOpen(false)
                     }}
@@ -106,9 +88,7 @@ export function ComboboxPopover() {
                     <status.icon
                       className={cn(
                         "mr-2 h-4 w-4",
-                        status.value === selectedStatus?.value
-                          ? "opacity-100"
-                          : "opacity-40"
+                        status.value === selectedStatus?.value ? "opacity-100" : "opacity-40"
                       )}
                     />
                     <span>{status.label}</span>

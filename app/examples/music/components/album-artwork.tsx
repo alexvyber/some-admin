@@ -55,13 +55,13 @@ export function AlbumArtwork({
             <ContextMenuSubTrigger>Add to Playlist</ContextMenuSubTrigger>
             <ContextMenuSubContent className="w-48">
               <ContextMenuItem>
-                <PlusCircle className="mr-2 h-4 w-4" />
+                <PlusCircle className="mr-2 w-4 h-4" />
                 New Playlist
               </ContextMenuItem>
               <ContextMenuSeparator />
               {playlists.map((playlist) => (
                 <ContextMenuItem key={playlist}>
-                  <ListMusic className="mr-2 h-4 w-4" /> {playlist}
+                  <ListMusic className="mr-2 w-4 h-4" /> {playlist}
                 </ContextMenuItem>
               ))}
             </ContextMenuSubContent>

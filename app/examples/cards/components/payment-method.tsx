@@ -37,7 +37,7 @@ export function DemoPaymentMethod() {
             className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground [&:has([data-state=checked])]:border-primary"
           >
             <RadioGroupItem value="card" id="card" className="sr-only" />
-            <CreditCard className="mb-3 h-6 w-6" />
+            <CreditCard className="mb-3 w-6 h-6" />
             Card
           </Label>
           <Label
@@ -45,7 +45,7 @@ export function DemoPaymentMethod() {
             className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground [&:has([data-state=checked])]:border-primary"
           >
             <RadioGroupItem value="paypal" id="paypal" className="sr-only" />
-            <Icons.paypal className="mb-3 h-6 w-6" />
+            <Icons.paypal className="mb-3 w-6 h-6" />
             Paypal
           </Label>
           <Label
@@ -53,7 +53,7 @@ export function DemoPaymentMethod() {
             className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground [&:has([data-state=checked])]:border-primary"
           >
             <RadioGroupItem value="apple" id="apple" className="sr-only" />
-            <Icons.apple className="mb-3 h-6 w-6" />
+            <Icons.apple className="mb-3 w-6 h-6" />
             Apple
           </Label>
         </RadioGroup>

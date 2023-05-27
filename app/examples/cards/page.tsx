@@ -53,9 +53,9 @@ export default function CardsPage() {
           className="hidden dark:block"
         />
       </div>
-      <div className="hidden items-start justify-center gap-6 rounded-lg p-8 md:grid lg:grid-cols-2 xl:grid-cols-3">
+      <div className="hidden gap-6 justify-center items-start p-8 rounded-lg md:grid lg:grid-cols-2 xl:grid-cols-3">
 
-        {/* <div className="col-span-2 grid items-start gap-6 lg:col-span-1">
+        {/* <div className="grid col-span-2 gap-6 items-start lg:col-span-1">
           <DemoContainer>
             <DemoCreateAccount />
           </DemoContainer>
@@ -63,7 +63,7 @@ export default function CardsPage() {
             <DemoPaymentMethod />
           </DemoContainer>
         </div> */}
-        <div className="col-span-2 grid items-start gap-6 lg:col-span-1">
+        <div className="grid col-span-2 gap-6 items-start lg:col-span-1">
           <DemoContainer>
             <DemoTeamMembers />
           </DemoContainer>
@@ -77,7 +77,7 @@ export default function CardsPage() {
             <DemoNotifications />
           </DemoContainer>
         </div>
-        <div className="col-span-2 grid items-start gap-6 lg:col-span-1 lg:grid-cols-2 xl:grid-cols-1">
+        <div className="grid col-span-2 gap-6 items-start lg:grid-cols-2 lg:col-span-1 xl:grid-cols-1">
           <DemoContainer>
             <DemoReportAnIssue />
           </DemoContainer>

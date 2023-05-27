@@ -42,10 +42,10 @@ export function PresetSelector({ presets, ...props }: PresetSelectorProps) {
           className="flex-1 justify-between md:max-w-[200px] lg:max-w-[300px]"
         >
           {selectedPreset ? selectedPreset.name : "Load a preset..."}
-          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+          <ChevronsUpDown className="ml-2 w-4 h-4 opacity-50 shrink-0" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[300px] p-0">
+      <PopoverContent className="p-0 w-[300px]">
         <Command>
           <CommandInput placeholder="Search presets..." />
           <CommandEmpty>No presets found.</CommandEmpty>

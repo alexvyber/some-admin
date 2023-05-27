@@ -23,9 +23,9 @@ export function MaxLengthSelector({ defaultValue }: MaxLengthSelectorProps) {
       <HoverCard openDelay={200}>
         <HoverCardTrigger asChild>
           <div className="grid gap-4">
-            <div className="flex items-center justify-between">
+            <div className="flex justify-between items-center">
               <Label htmlFor="maxlength">Maximum Length</Label>
-              <span className="w-12 rounded-md border border-transparent px-2 py-0.5 text-right text-sm text-muted-foreground hover:border-border">
+              <span className="py-0.5 px-2 w-12 text-sm text-right rounded-md border border-transparent text-muted-foreground hover:border-border">
                 {value}
               </span>
             </div>
@@ -42,7 +42,7 @@ export function MaxLengthSelector({ defaultValue }: MaxLengthSelectorProps) {
         </HoverCardTrigger>
         <HoverCardContent
           align="start"
-          className="w-[260px] text-sm"
+          className="text-sm w-[260px]"
           side="left"
         >
           The maximum number of tokens to generate. Requests can use up to 2,048

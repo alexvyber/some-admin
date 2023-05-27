@@ -100,17 +100,11 @@ export function CheckboxReactHookFormMultiple() {
                             onCheckedChange={(checked) => {
                               return checked
                                 ? field.onChange([...field.value, item.id])
-                                : field.onChange(
-                                    field.value?.filter(
-                                      (value) => value !== item.id
-                                    )
-                                  )
+                                : field.onChange(field.value?.filter((value) => value !== item.id))
                             }}
                           />
                         </FormControl>
-                        <FormLabel className="font-normal">
-                          {item.label}
-                        </FormLabel>
+                        <FormLabel className="font-normal">{item.label}</FormLabel>
                       </FormItem>
                     )
                   }}

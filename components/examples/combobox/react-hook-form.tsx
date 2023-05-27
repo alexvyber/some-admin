@@ -14,11 +14,7 @@ import {
   CommandInput,
   CommandItem,
 } from "@/components/ui/command"
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover"
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { toast } from "@/components/ui/use-toast"
 import {
   Form,
@@ -85,9 +81,7 @@ export function ComboboxReactHookForm() {
                       )}
                     >
                       {field.value
-                        ? languages.find(
-                            (language) => language.value === field.value
-                          )?.label
+                        ? languages.find((language) => language.value === field.value)?.label
                         : "Select language"}
                       <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                     </Button>
@@ -109,9 +103,7 @@ export function ComboboxReactHookForm() {
                           <Check
                             className={cn(
                               "mr-2 h-4 w-4",
-                              language.value === field.value
-                                ? "opacity-100"
-                                : "opacity-0"
+                              language.value === field.value ? "opacity-100" : "opacity-0"
                             )}
                           />
                           {language.label}

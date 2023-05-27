@@ -45,22 +45,22 @@ export default function DashboardPage() {
       </div>
       <div className="hidden flex-col md:flex">
         <div className="border-b">
-          <div className="flex h-16 items-center px-4">
+          <div className="flex items-center px-4 h-16">
             <TeamSwitcher />
             <MainNav className="mx-6" />
-            <div className="ml-auto flex items-center space-x-4">
+            <div className="flex items-center ml-auto space-x-4">
               <Search />
               <UserNav />
             </div>
           </div>
         </div>
-        <div className="flex-1 space-y-4 p-8 pt-6">
-          <div className="flex items-center justify-between space-y-2">
+        <div className="flex-1 p-8 pt-6 space-y-4">
+          <div className="flex justify-between items-center space-y-2">
             <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
             <div className="flex items-center space-x-2">
               <CalendarDateRangePicker />
               <Button size="sm">
-                <Download className="mr-2 h-4 w-4" />
+                <Download className="mr-2 w-4 h-4" />
                 Download
               </Button>
             </div>
@@ -81,11 +81,11 @@ export default function DashboardPage() {
             <TabsContent value="overview" className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <Card>
-                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardHeader className="flex flex-row justify-between items-center pb-2 space-y-0">
                     <CardTitle className="text-sm font-medium">
                       Total Revenue
                     </CardTitle>
-                    <DollarSign className="h-4 w-4 text-muted-foreground" />
+                    <DollarSign className="w-4 h-4 text-muted-foreground" />
                   </CardHeader>
                   <CardContent>
                     <div className="text-2xl font-bold">$45,231.89</div>
@@ -95,11 +95,11 @@ export default function DashboardPage() {
                   </CardContent>
                 </Card>
                 <Card>
-                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardHeader className="flex flex-row justify-between items-center pb-2 space-y-0">
                     <CardTitle className="text-sm font-medium">
                       Subscriptions
                     </CardTitle>
-                    <Users className="h-4 w-4 text-muted-foreground" />
+                    <Users className="w-4 h-4 text-muted-foreground" />
                   </CardHeader>
                   <CardContent>
                     <div className="text-2xl font-bold">+2350</div>
@@ -109,9 +109,9 @@ export default function DashboardPage() {
                   </CardContent>
                 </Card>
                 <Card>
-                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardHeader className="flex flex-row justify-between items-center pb-2 space-y-0">
                     <CardTitle className="text-sm font-medium">Sales</CardTitle>
-                    <CreditCard className="h-4 w-4 text-muted-foreground" />
+                    <CreditCard className="w-4 h-4 text-muted-foreground" />
                   </CardHeader>
                   <CardContent>
                     <div className="text-2xl font-bold">+12,234</div>
@@ -121,11 +121,11 @@ export default function DashboardPage() {
                   </CardContent>
                 </Card>
                 <Card>
-                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                  <CardHeader className="flex flex-row justify-between items-center pb-2 space-y-0">
                     <CardTitle className="text-sm font-medium">
                       Active Now
                     </CardTitle>
-                    <Activity className="h-4 w-4 text-muted-foreground" />
+                    <Activity className="w-4 h-4 text-muted-foreground" />
                   </CardHeader>
                   <CardContent>
                     <div className="text-2xl font-bold">+573</div>

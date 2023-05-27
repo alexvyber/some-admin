@@ -23,7 +23,7 @@ export function PresetShare() {
             this.
           </p>
         </div>
-        <div className="flex items-center space-x-2 pt-4">
+        <div className="flex items-center pt-4 space-x-2">
           <div className="grid flex-1 gap-2">
             <Label htmlFor="link" className="sr-only">
               Link
@@ -37,7 +37,7 @@ export function PresetShare() {
           </div>
           <Button type="submit" size="sm" className="px-3">
             <span className="sr-only">Copy</span>
-            <Copy className="h-4 w-4" />
+            <Copy className="w-4 h-4" />
           </Button>
         </div>
       </PopoverContent>

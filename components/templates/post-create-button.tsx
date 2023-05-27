@@ -10,11 +10,7 @@ import { Icons } from "@/components/templates/icons"
 
 interface PostCreateButtonProps extends ButtonProps {}
 
-export function PostCreateButton({
-  className,
-  variant,
-  ...props
-}: PostCreateButtonProps) {
+export function PostCreateButton({ className, variant, ...props }: PostCreateButtonProps) {
   const router = useRouter()
   const [isLoading, setIsLoading] = React.useState<boolean>(false)
 

@@ -63,7 +63,7 @@ export function ExamplesNav({ className, ...props }: ExamplesNavProps) {
               className={cn(
                 "flex items-center px-4",
                 pathname?.startsWith(example.href)
-                  ? "font-bold text-primary"
+                  ? "text-primary font-bold"
                   : "font-medium text-muted-foreground"
               )}
             >
@@ -78,9 +78,7 @@ export function ExamplesNav({ className, ...props }: ExamplesNavProps) {
         </div>
         <ScrollBar orientation="horizontal" className="invisible" />
       </ScrollArea>
-      <ExampleCodeLink
-        pathname={pathname === "/" ? "/examples/dashboard" : pathname}
-      />
+      <ExampleCodeLink pathname={pathname === "/" ? "/examples/dashboard" : pathname} />
     </div>
   )
 }

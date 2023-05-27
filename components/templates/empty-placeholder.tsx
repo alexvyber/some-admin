@@ -5,11 +5,7 @@ import { Icons } from "@/components/templates/icons"
 
 interface EmptyPlaceholderProps extends React.HTMLAttributes<HTMLDivElement> {}
 
-export function EmptyPlaceholder({
-  className,
-  children,
-  ...props
-}: EmptyPlaceholderProps) {
+export function EmptyPlaceholder({ className, children, ...props }: EmptyPlaceholderProps) {
   return (
     <div
       className={cn(
@@ -25,8 +21,7 @@ export function EmptyPlaceholder({
   )
 }
 
-interface EmptyPlaceholderIconProps
-  extends Partial<React.SVGProps<SVGSVGElement>> {
+interface EmptyPlaceholderIconProps extends Partial<React.SVGProps<SVGSVGElement>> {
   name: keyof typeof Icons
 }
 
@@ -48,20 +43,16 @@ EmptyPlaceholder.Icon = function EmptyPlaceHolderIcon({
   )
 }
 
-interface EmptyPlacholderTitleProps
-  extends React.HTMLAttributes<HTMLHeadingElement> {}
+interface EmptyPlacholderTitleProps extends React.HTMLAttributes<HTMLHeadingElement> {}
 
 EmptyPlaceholder.Title = function EmptyPlaceholderTitle({
   className,
   ...props
 }: EmptyPlacholderTitleProps) {
-  return (
-    <h2 className={cn("mt-6 text-xl font-semibold", className)} {...props} />
-  )
+  return <h2 className={cn("mt-6 text-xl font-semibold", className)} {...props} />
 }
 
-interface EmptyPlacholderDescriptionProps
-  extends React.HTMLAttributes<HTMLParagraphElement> {}
+interface EmptyPlacholderDescriptionProps extends React.HTMLAttributes<HTMLParagraphElement> {}
 
 EmptyPlaceholder.Description = function EmptyPlaceholderDescription({
   className,
